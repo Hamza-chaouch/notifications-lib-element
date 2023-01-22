@@ -1,0 +1,155 @@
+
+/* info color #3498DB */
+/*  
+sucess #06BC0B
+warning F1C40F
+error rgba(231, 76, 60, 1) err-progress rgb(255, 207, 202)
+defaulte white
+*/
+:root {
+  --text-color-default:#747579 ;
+  --chcodes-notif-default: white;
+  --chcodes-notif-default-progress: #bae3ff;
+  --chcodes-notif-info: #3498DB;
+  --chcodes-notif-info-progress: #d3e9ff;
+  --chcodes-notif-danger: rgba(231, 76, 60, 1);
+  --chcodes-notif-danger-progress: rgb(255, 207, 202);
+  --chcodes-notif-warning: #F1C40F;
+  --chcodes-notif-warning-progress: #fff2c0;
+  --chcodes-notif-sucess: #06BC0B;
+  --chcodes-notif-sucess-progress: #d1ffd3;  
+}
+
+
+.toast {
+  box-sizing: border-box;
+  padding: 1.3rem;
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 2px 15px 0 rgb(0 0 0 / 5%);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.toast::before {
+  content: url(./svg/info.svg);
+  fill: #06BC0B;
+}
+
+.default-notif {
+    background-color:var(--chcodes-notif-default);
+    border: none;
+    color: var(--text-color-default);
+}
+
+.danger-notif {
+  background-color: var(--chcodes-notif-danger);
+    border: none;
+    color: white;
+}
+.toast.danger-notif.progress::before {
+  background-color: var(--chcodes-notif-danger-progress);
+}
+
+.sucess-notif {
+  background-color:var(--chcodes-notif-sucess);
+  border: none;
+  color: white;
+}
+
+.toast.sucess-notif.progress::before {
+  background-color: var(--chcodes-notif-sucess-progress);
+}
+
+
+.warning-notif {
+  background-color: var(--chcodes-notif-warning);
+  border: none;
+  color: white;
+}
+
+.toast.warning-notif.progress::before {
+  background-color: var(--chcodes-notif-warning-progress);
+}
+
+
+.info-notif {
+  background-color: var(--chcodes-notif-info);
+  border: none;
+  color: white;
+}
+
+.toast.info-notif.progress::before {
+  background-color: var(--chcodes-notif-info-progress);
+}
+
+
+.toast-container[data-position$="-right"] .toast {
+  transform: translateX(110%);
+}
+
+.toast-container[data-position$="-left"] .toast {
+  transform: translateX(-110%);
+}
+
+.toast-container[data-position="top-center"] .toast {
+  transform: translateY(-100vh);
+}
+
+.toast-container[data-position="bottom-center"] .toast {
+  transform: translateY(100vh);
+}
+
+.toast-container .toast.show {
+  transform: translate(0, 0);
+}
+
+.toast.progress::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: calc(100% * var(--progress));
+  background-color: var(--chcodes-notif-default-progress);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.toast.can-close::after {
+  content: "\00D7";
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.toast-container {
+  position: fixed;
+  margin: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.toast-container[data-position^="top-"] {
+  top: 0;
+}
+
+.toast-container[data-position^="bottom-"] {
+  bottom: 0;
+}
+
+.toast-container[data-position$="-right"] {
+  right: 0;
+}
+
+.toast-container[data-position$="-left"] {
+  left: 0;
+}
+
+.toast-container[data-position$="-center"] {
+  left: 50%;
+  transform: translateX(-50%);
+}
