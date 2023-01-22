@@ -3,10 +3,8 @@
 ![npm](https://img.shields.io/badge/npm-1.0.0-green)
 
 
-This is a library which provides the ability to use a custom element or to buid toast notifications
-with many parameters to configurate it. 
-it 's a custom element that enables drop zone to manage file.
-A reusable web component.
+This is a library which a class or a custom web component to display toast notifications in the positions that you configure.
+
 
 ![](preview.PNG)
 
