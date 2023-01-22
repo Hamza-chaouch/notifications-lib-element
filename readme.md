@@ -1,8 +1,6 @@
-# **Toast notification library & Custom element**
-![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/Hamza-chaouch/
-notifications-lib-element/main)
-[![npm](https://img.shields.io/badge/npm-1.0.2-green)](https://www.npmjs.com/package/@chcodes-hamza/
-notifications-lib-element)
+# **Toast notification library & Custom element** 
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/Hamza-chaouch/notifications-lib-element/main)  
+![npm](https://img.shields.io/badge/npm-1.0.0-green)
 
 
 This is a library which provides the ability to use a custom element or to buid toast notifications
@@ -47,3 +45,44 @@ Then use the custom element in your html  `<toast-notifications> </toast-notific
       "type":"sucess"
     }'></toast-notifications>
 ```
+
+## Customization
+### Attributes
+
+| Attribute | Type | Description                                 |
+|-----------|------|---------------------------------------------|
+| options   | JSON | a JSON object that contains many properties |
+
+#### Options Object: 
+
+| Option | Default   | Description                                                                                                                |
+|--------|-----------|----------------------------------------------------------------------------------------------------------------------------|
+|    text    | empty     | the text displayed in the toast                                                                                            |
+|    position    | top-right | the postion where the toast will be displayed (top-right, top-left, top-center ,bottom-center, bottom-left , bottom-right) |
+|    pauseOnHover    | true      | the toast progress bar stops when it s hovred                                                                              |
+|    pauseOnFocusLoss    | true      | the toast progress bar stops when you leave the current window                                                             |
+|    autoClose    | 5000 ms   | the toast will be closed automaticly after the 5000ms if you wnat to make it disappear manually put it false               |
+|    type    | default   | customize the type of the toast (danger, info , success, warning)                                                          |
+
+
+
+
+### CSS Custom Properties
+
+
+|  Property   |
+|-----|
+|  --text-color-default   |
+|  --chcodes-notif-default   |
+|  --chcodes-notif-default-progress   |
+|   --chcodes-notif-info  |
+|   --chcodes-notif-info-progress  |
+|  --chcodes-notif-danger   |
+|  --chcodes-notif-danger-progress   |
+| --chcodes-notif-warning  |
+| --chcodes-notif-warning-progress  |
+| --chcodes-notif-sucess  |
+| --chcodes-notif-sucess-progress  |
+
+
+
