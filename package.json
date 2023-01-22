@@ -1,6 +1,6 @@
 {
   "name": "@chcodes-hamza/notifications-toast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "toast notification libraby and custom element",
   "main": "dist/Toast.js",
   "module": "dist/Toast.js",
