@@ -55,14 +55,17 @@ Then use the custom element in your html  `<toast-notifications> </toast-notific
 
 #### Options Object: 
 
-| Option | Default   | Description                                                                                                                |
-|--------|-----------|----------------------------------------------------------------------------------------------------------------------------|
-|    text    | empty     | the text displayed in the toast                                                                                            |
-|    position    | top-right | the postion where the toast will be displayed (top-right, top-left, top-center ,bottom-center, bottom-left , bottom-right) |
-|    pauseOnHover    | true      | the toast progress bar stops when it s hovred                                                                              |
-|    pauseOnFocusLoss    | true      | the toast progress bar stops when you leave the current window                                                             |
-|    autoClose    | 5000 ms   | the toast will be closed automaticly after the 5000ms if you wnat to make it disappear manually put it false               |
-|    type    | default   | customize the type of the toast (danger, info , success, warning)                                                          |
+| Option       | Default          | Description                                                                                                               |
+|--------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
+| text         | empty            | the text displayed in the toast                                                                                           |
+| position     | top-right        | the postion where the toast will be displayed (top-right, top-left, top-center ,bottom-center, bottom-left , bottom-right) |
+| pauseOnHover | true             | the toast progress bar stops when it s hovred                                                                             |
+| pauseOnFocusLoss | true             | the toast progress bar stops when you leave the current window                                                            |
+| autoClose    | 5000 ms          | the toast will be closed automaticly after the 5000ms if you wnat to make it disappear manually put it false              |
+| type         | default template | customize the type of the toast (danger, info , success, warning)                                                         |
+| showProgress | true             | enable the progress bar in the toast bottom                                                                               |
+|  canClose | true             | give ability to close the toast                                                                                           |
+|  onClose | ()=>{}           | customize the action after the toast is closed, callback as input                                                         |
 
 
 
