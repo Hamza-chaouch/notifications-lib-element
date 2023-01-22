@@ -24,7 +24,7 @@ yarn add  @chcodes-hamza/notifications-toast
 Then import it in your script
 
 ```js
-import ' @chcodes-hamza/notifications-toast'
+import "./node_modules/@chcodes-hamza/notifications-toast/dist/Toast.js"
 ```
 
 ### With unpkg.com
