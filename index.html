@@ -5,9 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
   <script src="script.js" type="module"></script>
   <title>Document</title>
+  <style>
+    * {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,11 +23,82 @@
       "position": "top-right",
       "pauseOnHover": true,
       "pauseOnFocusLoss": true,
-      "autoClose": false,
-      "type":"info"
+      "autoClose": 10000,
+      "type":"sucess"
     }'></toast-notifications>
 
+  <toast-notifications options='{
+        "text": "Custom element",
+        "position": "top-right",
+        "pauseOnHover": true,
+        "pauseOnFocusLoss": true,
+        "autoClose": false,
+        "type":"danger"
+      }'></toast-notifications>
 
+  <toast-notifications options='{
+            "text": "Custom element",
+            "position": "top-right",
+            "pauseOnHover": true,
+            "pauseOnFocusLoss": true,
+            "autoClose": 10000,
+            "type":"warning"
+          }'></toast-notifications>
+
+  <toast-notifications options='{
+              "text": "Custom element",
+              "position": "top-right",
+              "pauseOnHover": true,
+              "pauseOnFocusLoss": true,
+              "autoClose": 10000,
+              "type":"info"
+            }'></toast-notifications>
+
+  <toast-notifications options='{
+                "text": "Custom element",
+                "position": "top-center",
+                "pauseOnHover": true,
+                "pauseOnFocusLoss": true,
+                "autoClose": 10000,
+                "type":"info"
+              }'></toast-notifications>
+
+  <toast-notifications options='{
+                "text": "Custom element",
+                "position": "top-left",
+                "pauseOnHover": true,
+                "pauseOnFocusLoss": true,
+                "autoClose": 10000,
+                "type":"danger"
+              }'></toast-notifications>
+
+  <toast-notifications options='{
+                              "text": "Custom element",
+                              "position": "bottom-left",
+                              "pauseOnHover": true,
+                              "pauseOnFocusLoss": true,
+                              "autoClose": 15000,
+                              "type":"warning"
+                            }'></toast-notifications>
+  <toast-notifications options='{
+                              "text": "Custom element",
+                              "position": "bottom-center",
+                              "pauseOnHover": true,
+                              "pauseOnFocusLoss": true,
+                              "autoClose": 50000,
+                              "type":"sucess"
+                            }'></toast-notifications>
+  <toast-notifications options='{
+                              "text": "Custom element",
+                              "position": "bottom-right",
+                              "pauseOnHover": true,
+                              "pauseOnFocusLoss": true,
+                              "autoClose": 20000,
+                              "type":"info"
+                            }'></toast-notifications>
+  <br><br>
+  <br><br>
+  <br><br><br><br>
   <button>Show Toast</button>
 </body>
 

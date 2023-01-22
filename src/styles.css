@@ -1,11 +1,4 @@
 
-/* info color #3498DB */
-/*  
-sucess #06BC0B
-warning F1C40F
-error rgba(231, 76, 60, 1) err-progress rgb(255, 207, 202)
-defaulte white
-*/
 :root {
   --text-color-default:#747579 ;
   --chcodes-notif-default: white;
@@ -20,7 +13,6 @@ defaulte white
   --chcodes-notif-sucess-progress: #d1ffd3;  
 }
 
-
 .toast {
   box-sizing: border-box;
   padding: 1.3rem;
@@ -30,11 +22,6 @@ defaulte white
   cursor: pointer;
   transition: transform 300ms ease-in-out;
   overflow: hidden;
-}
-
-.toast::before {
-  content: url(./svg/info.svg);
-  fill: #06BC0B;
 }
 
 .default-notif {
@@ -115,6 +102,8 @@ defaulte white
   left: 0;
   right: 0;
 }
+
+
 
 
 .toast.can-close::after {

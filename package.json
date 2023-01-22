@@ -1,0 +1,36 @@
+{
+  "name": "@chcodes-hamza/notifications-toast",
+  "version": "1.0.0",
+  "description": "toast notification libraby and custom element",
+  "main": "dist/Toast.js",
+  "module": "dist/Toast.js",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js",
+    "prepublishOnly": "rm -rf dist && npm run build"
+  },
+   "files": [
+    "/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamza-chaouch/notifications-lib-element.git"
+  },
+  "keywords": [
+    "custom-elements",
+    "js",
+    "toast",
+    "notification"
+  ],
+  "author": "CHAOUCH Hamza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hamza-chaouch/notifications-lib-element/issues"
+  },
+  "homepage": "https://github.com/Hamza-chaouch/notifications-lib-element#readme",
+  "devDependencies": {
+    "rollup-plugin-import-assert": "^2.1.3",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}

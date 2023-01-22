@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const DEFAULT_OPTIONS = {
   autoClose: 5000,
   position: "top-right",
